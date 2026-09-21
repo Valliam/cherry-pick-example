@@ -2,7 +2,7 @@ const count = document.querySelector("#count");
 let value = 0;
 
 document.querySelector("#increment").addEventListener("click", () => {
-  value += 2;
+  value += 1;
   count.textContent = String(value);
 });
 
