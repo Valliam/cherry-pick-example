@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="git-state-url" content="/api/git" />
     <title>Cherry-pick example</title>
     <style>
       :root { font-family: system-ui, sans-serif; color: #172033; background: #f5f6f8; }
@@ -19,7 +20,7 @@
       output { display: inline-block; min-width: 48px; font-size: 28px; vertical-align: middle; }
       .hint { font-size: 14px; line-height: 1.6; }
     </style>
-    <script src="/app.js" defer></script>
+    <script src="./app.js" defer></script>
   </head>
   <body>
     <h1>Cherry-pick example</h1>
@@ -29,7 +30,7 @@
         <dt>分支</dt><dd id="branch">读取中…</dd>
         <dt>HEAD</dt><dd id="head">读取中…</dd>
         <dt>最新提交</dt><dd id="subject">读取中…</dd>
-        <dt>工作区</dt><dd id="worktree">读取中…</dd>
+        <dt id="state-label">工作区</dt><dd id="worktree">读取中…</dd>
       </dl>
       <p class="hint" id="git-note">切换分支或提交后刷新页面，以读取最新状态。</p>
     </section>
